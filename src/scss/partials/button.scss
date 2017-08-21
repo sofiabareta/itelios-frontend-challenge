@@ -1,0 +1,21 @@
+.product__button {
+    background-color: transparent;
+    border: 1px solid $color-gainsboro;
+    color: $color-nonPhotoBlue;
+    font-family: $font-titles;
+    font-size: 1.6em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    &:hover {
+        border-left: 10px solid $color-safetyOrange;
+        cursor: pointer;
+        padding-right: 20px;
+        transition: .3s all;
+        i {
+            color: $color-safetyOrange;
+        }
+    }
+}
