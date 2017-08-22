@@ -44,9 +44,9 @@ gulp.task('usemin', function() {
 });
 
 gulp.task('style', function() {
-    return gulp.src('./src/scss/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./src/css'));
+    return gulp.src('src/scss/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('src/css/'));
 });
 
 gulp.task('sass', function() {

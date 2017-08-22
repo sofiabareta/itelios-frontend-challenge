@@ -1,6 +1,5 @@
-let $ = document.querySelector.bind(document);
-
 const build = (data) => {
+    let $ = document.querySelector.bind(document);
 
     $('#visited').innerHTML += `<ul class="product__list"> ${buildProduct(data.item)} </ul>`
     $('#recommended').innerHTML += `<ul class="product__list"> ${data.recommendation.map((data) => 
@@ -20,5 +19,3 @@ const buildProduct = (product) => {
             <button class="product__button" type="button">adicionar ao carrinho <i class="material-icons">add_shopping_cart</i></button> 
             </li>`
 }
-
-request();

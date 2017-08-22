@@ -1,0 +1,23 @@
+.slick-prev {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8e8e8+0,000000+100&1+0,0.2+100 */
+    background: -moz-linear-gradient(left, rgba(232, 232, 232, 1) 0%, rgba(0, 0, 0, 0.2) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(232, 232, 232, 1) 0%, rgba(0, 0, 0, 0.2) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(232, 232, 232, 1) 0%, rgba(0, 0, 0, 0.2) 100%);
+    &:before {
+        content: none;
+    }
+}
+
+.slick-next {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e8e8e8+100&0.2+0,0+100 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(232, 232, 232, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(232, 232, 232, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(232, 232, 232, 0) 100%);
+    &:before {
+        content: none;
+    }
+}

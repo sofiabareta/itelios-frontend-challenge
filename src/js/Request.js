@@ -1,4 +1,4 @@
-const request = () => {
+(function() {
     // Requisição HTTP
     const xhr = new XMLHttpRequest()
     const url = "./js/products.json"
@@ -21,4 +21,4 @@ const request = () => {
     };
 
     xhr.send()
-}
+})();

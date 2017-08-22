@@ -1,4 +1,8 @@
-@import 'partials/button.scss';
-@import 'variables.scss';
-@import 'reset.scss';
-@import 'style.scss';
+// Modules and Variables
+@import "modules/variables";
+@import "modules/reset";
+// Partials
+@import "partials/button";
+@import "partials/style";
+// Third-party
+@import "vendor/slider";
