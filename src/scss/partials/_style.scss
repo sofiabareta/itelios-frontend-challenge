@@ -4,6 +4,11 @@
 body {
     background-color: $color-white;
     font-size: 12px;
+    @media (min-width: 1024px) {
+        & {
+            font-size: 16px;
+        }
+    }
 }
 
 h2 {
@@ -26,10 +31,10 @@ p {
     h2 {
         margin-bottom: 1em;
     }
-    &__list {}
     &__item {
         border: 1px solid $color-border;
         padding: 25px;
+        cursor: pointer;
     }
     &__image {
         display: block;
@@ -54,9 +59,29 @@ p {
         color: $color-cadet;
         margin-bottom: 1em;
     }
-}
-
-footer {
-    background-color: $color-gainsboro;
-    height: 32vh;
+    @media (min-width: 1024px) {
+        &.visited {
+            float: left;
+            max-width: 25%;
+            padding-right: 0;
+        }
+        &.recommended {
+            float: left;
+            max-width: 65%;
+            padding-left: 0;
+        }
+        &__item:hover {
+            background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(193, 193, 193, 0) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(193, 193, 193, 0) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(193, 193, 193, 0) 100%);
+            .product__button {
+                visibility: visible;
+            }
+        }
+        &__name {
+            font-size: 1em;
+        }
+    }
 }

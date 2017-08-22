@@ -44,13 +44,13 @@ gulp.task('usemin', function() {
 });
 
 gulp.task('style', function() {
-    return gulp.src('src/scss/*.scss')
+    return gulp.src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('src/css/'));
 });
 
-gulp.task('sass', function() {
-    return gulp.watch('src/scss/*.scss', ['style']);
+gulp.task('sass', ['style'], function() {
+    return gulp.watch('src/scss/*.scss');
 });
 
 gulp.task('server', function() {

@@ -145,10 +145,30 @@ table {
     transition: .3s all; }
     .product__button:hover i {
       color: #ff6600; }
+  @media (min-width: 768px) {
+    .product__button {
+      width: 75%; } }
+  @media (min-width: 1024px) {
+    .product__button {
+      visibility: hidden;
+      font-size: 1em;
+      width: 100%; } }
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center; } }
+
+footer {
+  background-color: #e0dcdc;
+  height: 32vh; }
 
 body {
   background-color: #ffffff;
   font-size: 12px; }
+  @media (min-width: 1024px) {
+    body {
+      font-size: 16px; } }
 
 h2 {
   color: #5e6774;
@@ -169,7 +189,8 @@ p {
     margin-bottom: 1em; }
   .product__item {
     border: 1px solid #edeaea;
-    padding: 25px; }
+    padding: 25px;
+    cursor: pointer; }
   .product__image {
     display: block;
     margin-bottom: 3em;
@@ -188,27 +209,55 @@ p {
   .product__conditions {
     color: #5e6774;
     margin-bottom: 1em; }
+  @media (min-width: 1024px) {
+    .product.visited {
+      float: left;
+      max-width: 25%;
+      padding-right: 0; }
+    .product.recommended {
+      float: left;
+      max-width: 65%;
+      padding-left: 0; }
+    .product__item:hover {
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(193, 193, 193, 0) 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.15) 0%, rgba(193, 193, 193, 0) 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(193, 193, 193, 0) 100%); }
+      .product__item:hover .product__button {
+        visibility: visible; }
+    .product__name {
+      font-size: 1em; } }
 
-footer {
-  background-color: #e0dcdc;
-  height: 32vh; }
-
-.slick-prev {
+button.slick-prev {
+  height: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8e8e8+0,000000+100&1+0,0.2+100 */
   background: -moz-linear-gradient(left, #e8e8e8 0%, rgba(0, 0, 0, 0.2) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #e8e8e8 0%, rgba(0, 0, 0, 0.2) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #e8e8e8 0%, rgba(0, 0, 0, 0.2) 100%); }
-  .slick-prev:before {
+  button.slick-prev:before {
     content: none; }
+  @media (min-width: 1024px) {
+    button.slick-prev {
+      visibility: hidden; } }
 
-.slick-next {
+button.slick-next {
+  height: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e8e8e8+100&0.2+0,0+100 */
   background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(232, 232, 232, 0) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(232, 232, 232, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(232, 232, 232, 0) 100%); }
-  .slick-next:before {
+  button.slick-next:before {
     content: none; }
+  @media (min-width: 1024px) {
+    button.slick-next {
+      visibility: hidden; } }
+
+ul.slick-dots li {
+  width: 10px; }
+  ul.slick-dots li button:before {
+    font-size: 10px; }

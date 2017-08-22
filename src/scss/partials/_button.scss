@@ -18,4 +18,16 @@
             color: $color-safetyOrange;
         }
     }
+    @media (min-width: 768px) {
+        & {
+            width: 75%;
+        }
+    }
+    @media (min-width: 1024px) {
+        & {
+            visibility: hidden;
+            font-size: 1em;
+            width: 100%;
+        }
+    }
 }
