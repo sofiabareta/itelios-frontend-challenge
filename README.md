@@ -2,9 +2,9 @@
 
 # Itelios Frontend Challenge
 
-Desafio feito por Sofia Bareta de Oliveira.
-[LinkedIn](https://www.linkedin.com/in/sofiabareta/)
-[Portfólio](https://www.sofiabareta.com.br/)
+Desafio feito por Sofia Bareta de Oliveira.<br>
+[LinkedIn](https://www.linkedin.com/in/sofiabareta/)<br>
+[Portfólio](https://www.sofiabareta.com.br/)<br>
 O desenvolvimento do teste durou, aproximadamente, 5 horas. 
 
 ## Design
